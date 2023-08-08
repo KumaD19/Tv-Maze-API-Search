@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shows search engine" />
+    <meta property="og:title" content="API Example" />
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content="" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/index.js"></script>
+    <title>API Example</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a  aria-label="Take to home" onclick="fetchShows()" class="nav__home">Home</a>
+        <section class="test">
+          <span><p class="nav__genre" role="button" aria-label="Display all genres">Gategories</p></span>
+          <div class="nav__genre-container">
+            <ul class="nav__genre-ul">
+              <li>Action</li>
+              <li>Adult</li>
+              <li>Adventure</li>
+              <li>Anime</li>
+              <li>Children</li>
+              <li>Comedy</li>
+              <li>Crime</li>
+              <li>Drama</li>
+              <li>Fantasy</li>
+              <li>Food</li>
+              <li>History</li>
+              <li>Horror</li>
+              <li>Medical</li>
+              <li>Music</li>
+              <li>Mystery</li>
+              <li>Romance</li>
+              <li>Science-Fiction</li>
+              <li>Sports</li>
+              <li>Thriller</li>
+            </ul>
+          </div>
+        </section>
+        <section class="nav__search">
+          <input role="search" aria-label="Input search "type="text" id="searchInput" placeholder="Search TV Shows" />
+          <button aria-label="Find Shows" id="nav__enter" onclick="findShows()">
+            <ion-icon role="img" aria-label="Magnifying glass" name="search"></ion-icon>
+          </button>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="Shows">
+        <div id="shows__container" class="shows__container"></div>
+        <div id="shows__container-information"class="shows__container-information"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
